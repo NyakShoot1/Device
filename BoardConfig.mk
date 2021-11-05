@@ -1,25 +1,26 @@
 
-TARGET_BOARD_PLATFORM := msm8998 # определяет платформу, на которой построено устройство (зависит от используемого процессора)
+TARGET_BOARD_PLATFORM := sdm845 # определяет платформу, на которой построено устройство (зависит от используемого процессора)
 # Architecture
 TARGET_ARCH := arm64 # основная архитектура процессора
 TARGET_ARCH_VARIANT := armv8-a # указывает на вариант архитектуры armv8-a
 TARGET_CPU_ABI := arm64-v8a # Application Binary Interface (https://developer.android.com/ndk/guides/abis набор поддерживаемых процессором команд)
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a73 # указывает на тип ядра процессора
+TARGET_CPU_VARIANT := cortex-a75 # указывает на тип ядра процессора
+
 TARGET_2ND_ARCH := arm # указывает на вторую поддерживаемую архитектуру процессором
 TARGET_2ND_ARCH_VARIANT := armv8-a # указывает на вариант архитектуры armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a # Application Binary Interface (https://developer.android.com/ndk/guides/abis набор поддерживаемых процессором команд)
 TARGET_2ND_CPU_ABI2 := armeabi # указывает на тип ядра процессора
-TARGET_2ND_CPU_VARIANT := cortex-a53 # указывает на тип ядра процессора
+TARGET_2ND_CPU_VARIANT := cortex-a55 # указывает на тип ядра процессора
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/msm8998 # указывает путь к исходному коду ядра.
-TARGET_KERNEL_CONFIG := lineage_ocn_defconfig # указывает имя конфигурационного файла для сборки ядра.
+TARGET_KERNEL_SOURCE := kernel/mirea/it1 # указывает путь к исходному коду ядра.
+TARGET_KERNEL_CONFIG := it_defconfig # указывает имя конфигурационного файла для сборки ядра.
 
 # Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608 # размер образа ядра в байтах
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 5242880 # размер образа рекавери в байтах
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 314572800 # размер образа системы в байтах
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 # размер образа ядра в байтах
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0 # размер образа рекавери в байтах
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296 # размер образа системы в байтах
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1294991360 # размер образа для хранения данных пользователя в байтах
 BOARD_HAS_NO_CACHE_PARTITION := true
 
