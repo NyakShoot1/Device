@@ -1,8 +1,8 @@
 
 PRODUCT_DEVICE := it1 # кодовое имя устройства
 PRODUCT_NAME := mirea_it1 # кодовое имя продукта, указывается в ro.product.name в файле build.prop скомпилированного образа
-PRODUCT_BRAND := HTC # бренд, указывается в ro.product.brand в файле build.prop скомпилированного образа
-PRODUCT_MODEL := HTC U11 # модель, указывается в ro.product.model в файле build.prop скомпилированного образа
+PRODUCT_BRAND := MIREA # бренд, указывается в ro.product.brand в файле build.prop скомпилированного образа
+PRODUCT_MODEL := MIREA IT1 # модель, указывается в ro.product.model в файле build.prop скомпилированного образа
 PRODUCT_MANUFACTURER := MIREA # производитель, указывается в ro.product.manufacturer в файле build.prop скомпилированного образа
 
 PRODUCT_COPY_FILES += \
