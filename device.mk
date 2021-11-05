@@ -1,9 +1,9 @@
 
-PRODUCT_DEVICE := ocn # кодовое имя устройства
-PRODUCT_NAME := lineage_ocn # кодовое имя продукта, указывается в ro.product.name в файле build.prop скомпилированного образа
+PRODUCT_DEVICE := it1 # кодовое имя устройства
+PRODUCT_NAME := mirea_it1 # кодовое имя продукта, указывается в ro.product.name в файле build.prop скомпилированного образа
 PRODUCT_BRAND := HTC # бренд, указывается в ro.product.brand в файле build.prop скомпилированного образа
 PRODUCT_MODEL := HTC U11 # модель, указывается в ro.product.model в файле build.prop скомпилированного образа
-PRODUCT_MANUFACTURER := HTC # производитель, указывается в ro.product.manufacturer в файле build.prop скомпилированного образа
+PRODUCT_MANUFACTURER := MIREA # производитель, указывается в ro.product.manufacturer в файле build.prop скомпилированного образа
 
 PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
